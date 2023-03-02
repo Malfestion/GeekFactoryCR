@@ -1,7 +1,12 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
 /*---------------------BANNER---------------------*/
 .banner {
   position: relative;
   width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .banner img {
@@ -15,8 +20,8 @@
   left: 35%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: #555;
-  color: white;
+  background-color: white;
+  color: black;
   font-size: 16px;
   padding: 12px 24px;
   border: none;
@@ -25,12 +30,78 @@
 }
 
 .banner .btn:hover {
-  background-color: black;
+    color:white;
+    background-color: #285c8c;
+    border: 3px solid black;
 }
 /*---------------------SEARCH---------------------*/
+.search{
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.search input[type=text] {
+  background: #999999;
+  font-size: 17px;
+  border: none;
+}
+.search button {
+  background: #999999;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
 /*---------------------TIPOS DE PRENDA---------------------*/
 /*---------------------TOP VENTAS---------------------*/
 /*---------------------PERSONALIZA---------------------*/
+.personaliza {
+   padding-top: 50px;
+   padding-bottom: 50px;
+   padding-left: 10%; 
+   padding-right: 10%;
+   display: inline-flex;
+}
+.personaliza-img{
+    height: 50%;
+    width: 50%;
+}
+.personaliza-texto{
+    text-align: left;
+    padding-left: 4%; 
+    margin-top: 5%;
+}
+.personaliza-texto .desc {
+  font-size: 19px;
+  color: #999999;
+}
+.personaliza-texto .titulo {
+  font-size: 30px;
+  color:#777777;
+}
+.personaliza-texto .btn {
+    color:white;
+    background-color: #285c8c;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.personaliza .btn:hover {
+    background-color:#006699;
+}
 /*---------------------SERVICIOS---------------------*/
+.servicios{
+    color:#777777;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.servicios .servicios-img{
+    width: 100%;
+    height: auto;
+}
 /*---------------------PROMOS---------------------*/
 /*---------------------NOVEDAES---------------------*/
