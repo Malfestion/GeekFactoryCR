@@ -13,8 +13,7 @@
     <body>
         <header th:replace="~{layout/header :: header}"></header>
         <div class="banner">
-            <img src="ImgWeb/Banner.png" alt="Banner">
-            <button class="btn">Ver más</button>
+            <a href="/"><img src="ImgWeb/Banner.png" alt="Banner"></a>
         </div>
         
         <div class="search">
@@ -25,26 +24,37 @@
         </div>
         
         <div class="tipos-de-prendas">
-            
+            <div class="center">
+                <a href="/"><img src="ImgWeb/Tipos1.png" alt="" class="tipoImg1"/></a>
+
+                <div class="tipos-pequenas">
+                    <a href="/"><img src="ImgWeb/Tipos2.png" alt="" class="tipoImg2"/></a>
+                    <a href="/"><img src="ImgWeb/Tipos3.png" alt="" class="tipoImg3"/></a>
+                </div>
+            </div>
         </div>
         
         <div class="top-ventas">
-            
+            <hr style="width:90%">
+            <div class="top-carrusel">
+                
+            </div>
+            <h2 class="top-titulo">― TOP en ventas ―</h2>
+            <button class="btn">Ver más</button>
         </div>
+        
         <hr style="width:90%">
         <div class="personaliza">
-            <img src="ImgWeb/Personaliza.png" alt="Personaliza" class="personaliza-img">
-            <div class="personaliza-texto">
-               <h2 class="titulo">Personalizá tu camisa</h2>
-               <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor scelerisque eros, quis elementum 
-                risus mattis at. Praesent sem massa, suscipit a sollicitudin sit amet, hendrerit id erat. Aliquam id neque 
-                vitae mi pellentesque rhoncus. Vestibulum sit amet imperdiet nisl, et ornare massa. Duis laoreet ut odio sed g
-                ravida. Maecenas dui sapien, bibendum eu eros vitae, porttitor placerat mi. Lorem ipsum dolor sit amet, 
-                consectetur adipiscing elit. Donec condimentum, libero id vehicula hendrerit, mi arcu rutrum velit, eget auctor 
-                dui lorem imperdiet ligula. Curabitur interdum sodales consectetur. Praesent convallis tempor nulla, sed cursus 
-                metus varius ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elementum fringilla augue 
-                a dapibus.</p> 
-               <button class="btn">Ver más</button>
+            <div class="personaliza-img-box">
+                <img src="ImgWeb/Personaliza.png" alt="" class="personaliza-img"/>
+            </div>
+            <div class="personaliza-txtbtn-box">
+                <h2 class="personaliza-title">Personalizá tu camisa</h2>
+                <p class="personaliza-pgraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec congue mi. 
+                    Etiam a enim gravida purus tempus rhoncus. In tempus tincidunt sodales. Proin quis iaculis nunc. Vestibulum 
+                    non nulla rutrum, placerat ante et, tincidunt augue. Nam euismod libero quis justo blandit fermentum. Nulla 
+                    vulputate a sapien ornare elementum.</p>
+                <button class="btn">Ver más</button>
             </div>
         </div>
         <hr style="width:90%">
@@ -54,11 +64,16 @@
         </div>
         
         <div class="promos">
-            
+            <a href="/"><img src="ImgWeb/Promos.png" alt="Promos"></a>
         </div>
         
         <div class="novedades">
-            
+            <hr style="width:90%">
+            <div class="novedades-carrusel">
+                
+            </div>
+            <h2 class="novedades-titulo">― Novedades ―</h2>
+            <button class="btn">Ver más</button>
         </div>
         
         <footer th:replace="~{layout/footer :: footer}"></footer>

@@ -5,81 +5,81 @@
 .banner {
   position: relative;
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
 }
 
 .banner img {
   width: 100%;
   height: auto;
 }
-
-.banner .btn {
-  position: absolute;
-  top: 75%;
-  left: 35%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: white;
-  color: black;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.banner .btn:hover {
-    color:white;
-    background-color: #285c8c;
-    border: 3px solid black;
-}
 /*---------------------SEARCH---------------------*/
 .search{
   width: 100%;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
 }
 .search input[type=text] {
-  background: #999999;
-  font-size: 17px;
+  font-size: 20px;
   border: none;
 }
 .search button {
-  background: #999999;
-  font-size: 17px;
+  font-size: 20px;
   border: none;
+  background-color:white; 
   cursor: pointer;
 }
+.search button:hover{
+    background-color: #cccccc;
+}
 /*---------------------TIPOS DE PRENDA---------------------*/
+.tipos-de-prendas{
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+.tipos-de-prendas .tipoImg1{
+    width: 100%;
+}
+.tipos-de-prendas .center{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;  
+}
+.tipos-de-prendas .tipos-pequenas {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.tipos-de-prendas .tipos-pequenas .tipoImg2{
+    position: relative;
+    top: 0;
+    left: 5%;
+    width: 100%;
+}
+.tipos-de-prendas .tipos-pequenas .tipoImg3{
+    position: absolute;
+    top: 51.5%;
+    left: 5%;
+    width: 100%;
+}
 /*---------------------TOP VENTAS---------------------*/
-/*---------------------PERSONALIZA---------------------*/
-.personaliza {
-   padding-top: 50px;
-   padding-bottom: 50px;
-   padding-left: 10%; 
-   padding-right: 10%;
-   display: inline-flex;
+.top-ventas{
+    width:100%;
+    text-align: center;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
 }
-.personaliza-img{
-    height: 50%;
-    width: 50%;
+.top-ventas .top-titulo{
+    font-size: 30px;
+    color:#777777;
 }
-.personaliza-texto{
-    text-align: left;
-    padding-left: 4%; 
-    margin-top: 5%;
-}
-.personaliza-texto .desc {
-  font-size: 19px;
-  color: #999999;
-}
-.personaliza-texto .titulo {
-  font-size: 30px;
-  color:#777777;
-}
-.personaliza-texto .btn {
+
+.top-ventas .btn {
     color:white;
     background-color: #285c8c;
     font-size: 16px;
@@ -89,19 +89,106 @@
     border-radius: 5px;
 }
 
-.personaliza .btn:hover {
+.top-ventas .btn:hover {
     background-color:#006699;
+}
+/*---------------------PERSONALIZA---------------------*/
+.personaliza{
+    display: flex;
+    width:100%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+.personaliza .personaliza-img-box{
+    margin-left: 5%;
+    width:30%;
+    padding-left: 0%;
+    display: block;
+    margin: auto;
+}
+.personaliza .personaliza-txtbtn-box{
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    height: auto;
+    max-width: 50%;
+    word-wrap: break-word;
+}
+.personaliza .personaliza-img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.personaliza .personaliza-title{
+    font-size: 30px;
+    color:#777777;
+}
+.personaliza .personaliza-pgraph{
+    font-size: 20px;
+    color:#999999;
+    
+}
+.personaliza .btn{
+  background-color: #285c8c;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.personaliza .btn:hover{
+   background-color:#006699;
 }
 /*---------------------SERVICIOS---------------------*/
 .servicios{
     color:#777777;
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
 }
 .servicios .servicios-img{
     width: 100%;
     height: auto;
 }
 /*---------------------PROMOS---------------------*/
+.promos {
+  position: relative;
+  width: 100%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
+.promos img {
+  width: 100%;
+  height: auto;
+
+}
+
 /*---------------------NOVEDAES---------------------*/
+.novedades{
+    width:100%;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.novedades .novedades-titulo{
+    font-size: 30px;
+    color:#777777;
+}
+
+.novedades .btn {
+    color:white;
+    background-color: #285c8c;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+
+.novedades .btn:hover {
+    background-color:#006699;
+}
