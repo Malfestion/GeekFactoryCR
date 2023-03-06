@@ -3,13 +3,14 @@
 }
 /*---------------------BANNER---------------------*/
 .banner {
+  top: 20%;  /*cambie esto por problemas con el header*/
   position: relative;
   width: 100%;
   padding-top: 2.5%;
   padding-bottom: 2.5%;
 }
 
-.banner img {
+.banner img {  
   width: 100%;
   height: auto;
 }
