@@ -24,6 +24,7 @@
     height: 10%;/*alto*/
     text-align: right;
     background-color: tomato;
+    z-index: 100;
 }
 
 /*menu de los datos de arriba*/
