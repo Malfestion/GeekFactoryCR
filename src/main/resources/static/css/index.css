@@ -1,22 +1,137 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
 /*---------------------BANNER---------------------*/
 .banner {
   top: 20%;  /*cambie esto por problemas con el header*/
   position: relative;
   width: 100%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
 }
 
 .banner img {  
   width: 100%;
   height: auto;
 }
+/*---------------------SEARCH---------------------*/
+.search{
+  width: 100%;
+  text-align: center;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+.search input[type=text] {
+  font-size: 20px;
+  border: none;
+}
+.search button {
+  font-size: 20px;
+  border: none;
+  background-color:white; 
+  cursor: pointer;
+}
+.search button:hover{
+    background-color: #cccccc;
+}
+/*---------------------TIPOS DE PRENDA---------------------*/
+.tipos-de-prendas{
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+.tipos-de-prendas .tipoImg1{
+    width: 100%;
+}
+.tipos-de-prendas .center{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;  
+}
+.tipos-de-prendas .tipos-pequenas {
+    position: relative;
+    top: 0;
+    left: 0;
+}
 
-.banner .btn {
-  position: absolute;
-  top: 75%;
-  left: 35%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #555;
+.tipos-de-prendas .tipos-pequenas .tipoImg2{
+    position: relative;
+    top: 0;
+    left: 5%;
+    width: 100%;
+}
+.tipos-de-prendas .tipos-pequenas .tipoImg3{
+    position: absolute;
+    top: 51.5%;
+    left: 5%;
+    width: 100%;
+}
+/*---------------------TOP VENTAS---------------------*/
+.top-ventas{
+    width:100%;
+    text-align: center;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+.top-ventas .top-titulo{
+    font-size: 30px;
+    color:#777777;
+}
+
+.top-ventas .btn {
+    color:white;
+    background-color: #285c8c;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.top-ventas .btn:hover {
+    background-color:#006699;
+}
+/*---------------------PERSONALIZA---------------------*/
+.personaliza{
+    display: flex;
+    width:100%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+.personaliza .personaliza-img-box{
+    margin-left: 5%;
+    width:30%;
+    padding-left: 0%;
+    display: block;
+    margin: auto;
+}
+.personaliza .personaliza-txtbtn-box{
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    height: auto;
+    max-width: 50%;
+    word-wrap: break-word;
+}
+.personaliza .personaliza-img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.personaliza .personaliza-title{
+    font-size: 30px;
+    color:#777777;
+}
+.personaliza .personaliza-pgraph{
+    font-size: 20px;
+    color:#999999;
+    
+}
+.personaliza .btn{
+  background-color: #285c8c;
   color: white;
   font-size: 16px;
   padding: 12px 24px;
@@ -24,14 +139,57 @@
   cursor: pointer;
   border-radius: 5px;
 }
-
-.banner .btn:hover {
-  background-color: black;
+.personaliza .btn:hover{
+   background-color:#006699;
 }
-/*---------------------SEARCH---------------------*/
-/*---------------------TIPOS DE PRENDA---------------------*/
-/*---------------------TOP VENTAS---------------------*/
-/*---------------------PERSONALIZA---------------------*/
 /*---------------------SERVICIOS---------------------*/
+.servicios{
+    color:#777777;
+    text-align: center;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+.servicios .servicios-img{
+    width: 100%;
+    height: auto;
+}
 /*---------------------PROMOS---------------------*/
+.promos {
+  position: relative;
+  width: 100%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
+.promos img {
+  width: 100%;
+  height: auto;
+
+}
+
 /*---------------------NOVEDAES---------------------*/
+.novedades{
+    width:100%;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.novedades .novedades-titulo{
+    font-size: 30px;
+    color:#777777;
+}
+
+.novedades .btn {
+    color:white;
+    background-color: #285c8c;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+
+.novedades .btn:hover {
+    background-color:#006699;
+}

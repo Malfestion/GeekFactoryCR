@@ -3,6 +3,7 @@
         <title>GeekFactoryCR</title>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- css principal del index -->
         <link rel="stylesheet" href="css/index.css"/>
         <!-- CSS de header y footer de la pagina -->
@@ -12,30 +13,69 @@
     <body>
         <header th:replace="~{layout/header :: header}"></header>
         <div class="banner">
-            <img src="ImgWeb/Banner.png" alt="Banner"> 
+            <a href="/"><img src="ImgWeb/Banner.png" alt="Banner"></a>
+        </div>
+        
+        <div class="search">
+            <form action="/">
+                <input type="text" placeholder="Buscar" name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        
+        <div class="tipos-de-prendas">
+            <div class="center">
+                <a href="/"><img src="ImgWeb/Tipos1.png" alt="" class="tipoImg1"/></a>
+
+                <div class="tipos-pequenas">
+                    <a href="/"><img src="ImgWeb/Tipos2.png" alt="" class="tipoImg2"/></a>
+                    <a href="/"><img src="ImgWeb/Tipos3.png" alt="" class="tipoImg3"/></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="top-ventas">
+            <hr style="width:90%">
+            <div class="top-carrusel">
+                
+            </div>
+            <h2 class="top-titulo">― TOP en ventas ―</h2>
             <button class="btn">Ver más</button>
         </div>
-        <div class="search">
-            
-        </div>
-        <div class="tipos-de-prendas">
-            
-        </div>
-        <div class="top-ventas">
-            
-        </div>
+        
+        <hr style="width:90%">
         <div class="personaliza">
-            
+            <div class="personaliza-img-box">
+                <img src="ImgWeb/Personaliza.png" alt="" class="personaliza-img"/>
+            </div>
+            <div class="personaliza-txtbtn-box">
+                <h2 class="personaliza-title">Personalizá tu camisa</h2>
+                <p class="personaliza-pgraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec congue mi. 
+                    Etiam a enim gravida purus tempus rhoncus. In tempus tincidunt sodales. Proin quis iaculis nunc. Vestibulum 
+                    non nulla rutrum, placerat ante et, tincidunt augue. Nam euismod libero quis justo blandit fermentum. Nulla 
+                    vulputate a sapien ornare elementum.</p>
+                <button class="btn">Ver más</button>
+            </div>
         </div>
+        <hr style="width:90%">
         <div class="servicios">
-            
+            <img src="ImgWeb/Servicios.png" alt="" class="servicios-img"/>
+            <h3>Tienda Online - Temática geek, anime, games y muchos más.</h3>
         </div>
+        
         <div class="promos">
-            
+            <a href="/"><img src="ImgWeb/Promos.png" alt="Promos"></a>
         </div>
+        
         <div class="novedades">
-            
+            <hr style="width:90%">
+            <div class="novedades-carrusel">
+                
+            </div>
+            <h2 class="novedades-titulo">― Novedades ―</h2>
+            <button class="btn">Ver más</button>
         </div>
+        
         <footer th:replace="~{layout/footer :: footer}"></footer>
     </body>
 </html>
