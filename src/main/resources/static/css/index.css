@@ -1,13 +1,15 @@
 *{
   font-family: Arial, Helvetica, sans-serif;
+  margin:0;
 }
 /*---------------------BANNER---------------------*/
 .banner {
-  top: 20%;  /*cambie esto por problemas con el header*/
-  position: relative;
+  /*top: 20%;  /*cambie esto por problemas con el header*/
+  /*position: relative;*/
   width: 100%;
-  padding-top: 2.5%;
+  padding-top: 6%;
   padding-bottom: 2.5%;
+  
 }
 
 .banner img {  
@@ -36,7 +38,7 @@
 }
 /*---------------------TIPOS DE PRENDA---------------------*/
 .tipos-de-prendas{
-    position: relative;
+    /*position: relative;*/
     width: 100%;
     display: flex;
     padding-top: 2.5%;
@@ -155,7 +157,7 @@
 }
 /*---------------------PROMOS---------------------*/
 .promos {
-  position: relative;
+  /*position: relative;*/
   width: 100%;
   padding-top: 2.5%;
   padding-bottom: 2.5%;
