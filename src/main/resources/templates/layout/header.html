@@ -3,10 +3,30 @@
         <title>GeekFactoryCR</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../../static/css/header.css" rel="stylesheet" type="text/css"/>
+        <script src="https://kit.fontawesome.com/60653993af.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header th:fragment="header">
-            AQUI VA EL HEADER
+        <header id="header" th:fragment="header">
+            
+            <nav class="nav-datos">
+                <ul class="nav-datos-menu">
+                    <li class="nav-datos-menu-item" > <a class="nav-datos-link" href="#.whtasaap"><img src="imgIconos/WhatsaapMenu.png" width="10%"/> +506 8888-8888</a></li> 
+                    <li class="nav-datos-menu-item"> <a class="nav-datos-link" href="#.correo"> <img src="imgIconos/emailMenu.png" width="8%"/></i> ventas@geekfactory.com</a></li> 
+                </ul>
+            </nav>
+           
+            <nav class="nav-principal">
+                <a href="index.html"> <img src="ImgWeb/LogoTienda.png" width="90%"></a>
+                <ul class="nav-principal-menu">
+                    <li class="nav-datos-menu-item"> <a href="#.html" class="nav-principal-link">Categorías</a></li>
+                    <li class="nav-datos-menu-item"> <a href="#.html" class="nav-principal-link">T-Shirt</a></li>
+                    <li class="nav-datos-menu-item"> <a href="#.html" class="nav-principal-link">Joggers</a></li>
+                    <li class="nav-datos-menu-item"> <a href="#.html" class="nav-principal-link">Promociones</a></li>
+                    <li class="nav-datos-menu-item"> <a href="#.html" class="nav-principal-link">Personalizá</a></li>
+                </ul>
+            </nav>   
+
         </header>
     </body>
 </html>

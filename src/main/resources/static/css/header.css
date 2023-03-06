@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+
+
+:root {
+    /* Colores: */
+    --azuloscuro: #153657;
+    --azulprincipal: #23588E;
+    --amarillologo: #F3DB43;
+    --gris-70-: #707070;
+    --blanco-20-: #F5F5F5;
+    --blanco: #FFFFFF;
+    
+    /*Textos*/
+    --font-family-roboto: Roboto;
+}
+
+
+#header{
+    position: fixed; /*posición fija*/
+    top: 0;
+    left: 0;
+    width: 100%;/*ancho*/
+    height: 10%;/*alto*/
+    text-align: right;
+    background-color: tomato;
+}
+
+/*menu de los datos de arriba*/
+.nav-datos{
+    position: fixed; /*posición fija*/
+    top: 0;
+    left: 0;
+    width: 100%;/*ancho*/
+    height: 5%;/*alto*/ 
+    background-color: #153657;
+}
+.nav-datos-link{
+    color: #FFFFFF;
+    text-decoration: none;/*quita la decoración*/
+}
+.nav-datos-menu{
+    display: inline-flex; /*uno a la par del otro y a la izquierda*/
+    margin-right: 3%; /**margen de la derecha*/
+    list-style: none; /*quita lo bullets*/ 
+}
+
+.nav-datos-menu-item{
+    font-size: 13px; /*tamaño letra*/
+    font-family: 'roboto',sans-serif;
+}
+
+.nav-datos-link:hover{
+    color: #F3DB43;
+    transition: 0.5s;
+}
+
+
+/*menu principal*/
+.nav-principal{
+    /*fondo*/
+    top: 5%; /*espacio del menu de arriba y este*/
+    left: 0%;
+    width: 100%;/*ancho*/
+    height: 8%;/*alto*/
+    background-color: #23588E;
+    position: fixed; /*posición fija*/
+    display: flex;
+}
+
+.nav-principal-link{
+    color: #707070;
+    text-decoration: none;/*quita la decoración*/
+}
+
+.nav-principal-menu{
+    display:flex;
+    margin-right: 3%; /**margen de la derecha*/
+    list-style: none; /*quita lo bullets*/ 
+}
+.nav-principal-menu-item{
+    font-size: 17px; /*tamaño letra*/
+    margin: 80px 80px;
+    font-family: 'roboto',sans-serif;
+}
