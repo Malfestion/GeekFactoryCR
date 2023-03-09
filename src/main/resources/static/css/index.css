@@ -72,10 +72,11 @@
 }
 /*---------------------TOP VENTAS---------------------*/
 .top-ventas{
-    width:100%;
+    width:50%;
     text-align: center;
     padding-top: 2.5%;
     padding-bottom: 2.5%;
+    margin-left: 25%;
 }
 .top-ventas .top-titulo{
     font-size: 30px;
