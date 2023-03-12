@@ -8,10 +8,116 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <title>GeekFactoryCR</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../../static/css/footer.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="../../static/css/footer.css" type="text/css">
+
     </head>
     <body>
-        <footer th:fragment="footer">
-            AQUI VA EL FOOTER
+
+        <!-- Footer -->
+        <footer class="text-center text-white" style="background-color:#23588E ">
+            <div class="container p-4">
+
+                <!-- Redes Sociales/Indicaciones:
+                btn: crear boton
+                btn-outline-light: crea contorno arededor del boton y lo hace color claro
+                m-4: margen de 4 / espacio entre iconos -->
+
+                <section class="mb-4">
+                    <!-- Whatsapp -->
+                    <a class="btn btn-outline-light m-4" href="https://wa.me/+50664351309" role="button"
+                       ><i class="fab fa-whatsapp"></i
+                        ></a>
+
+                    <!-- Correo -->
+                    <a class="btn btn-outline-light m-4" href="www.great.tshirt.cr@gmail.com" role="button"
+                       ><i class="fab fa-instagram"></i> <!-- el incono de correo no me funciona :( -->
+                    </a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light m-4" href="https://www.instagram.com/geek_factorycr/?hl=es" role="button"
+                       ><i class="fab fa-instagram"></i
+                        ></a>
+
+                    <!-- TikTok -->
+                    <a class="btn btn-outline-light m-4" href="https://www.tiktok.com/@geekfactorycr?is_from_webapp=1&sender_device=pc" role="button"
+                       ><i class="fab fa-tiktok"></i
+                        ></a>
+                </section>
+
+
+                <!-- Texto -->
+                <section class="mb-4">
+                    <p>
+                        Las mejores promociones para los mejores clientes
+                        No te perdás de nuestras increíbles promociones 
+                    </p>
+                    <p class="fw-bold" style="color: #F3DB43">
+                        Suscribete para recibir promociones exclusivas, ventas privadas y novedades
+                    </p>
+                </section>
+
+
+
+                <!-- Form -->
+                <section class="">
+                    <form action="">
+                        <div class="row d-flex justify-content-center">
+
+                            <!--Barra de correo-->
+                            <div class="col-md-5 col-12">
+                                <div class="form-outline form-white mb-4">
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@correo.com">
+                                </div>
+                            </div>
+
+                            <!--Boton de subscribirse-->
+                            <div class="col-auto">
+                                <!-- Submit button -->
+                                <button type="submit" class="btn btn-outline-light mb-4">
+                                    Subscribirse
+                                </button>
+                            </div>
+                    </form>
+                </section>
+                
+
+
+                <!-- Section: Links -->
+                <section class="">
+                    <!--Grid row-->
+                    <div class="row">
+                        <!--Grid column-->
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Links</h5>
+
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#!" class="text-white">Categorías</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">T-Shirt</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Hoodies</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Joggers</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            
+            
+            <div class="text-center p-3" style="background-color:#153657;">
+                © 2023 Copyright:
+                <a class="text-white" href="great.tshirt.cr@gmail.com">Geek Factory</a>
+            </div>
+
         </footer>
+
     </body>
 </html>
