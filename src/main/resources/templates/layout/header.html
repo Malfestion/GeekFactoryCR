@@ -3,30 +3,61 @@
         <title>GeekFactoryCR</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="../../static/css/header.css" rel="stylesheet" type="text/css"/>
+        <link href="../../static/css//header.css" rel="stylesheet" type="text/css"/>
         <script src="https://kit.fontawesome.com/60653993af.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header id="header" th:fragment="header">
-            
-            <nav class="nav-datos">
-                <ul class="nav-datos-menu">
-                    <li class="nav-datos-menu-item" > <a class="nav-datos-link" href="#.whtasaap"><img src="imgIconos/WhatsaapMenu.png" width="10%"/> +506 8888-8888</a></li> 
-                    <li class="nav-datos-menu-item"> <a class="nav-datos-link" href="#.correo"> <img src="imgIconos/emailMenu.png" width="8%"/></i> ventas@geekfactory.com</a></li> 
-                </ul>
-            </nav>
-           
-            <nav class="nav-principal">
-                <a href="index.html"> <img src="ImgWeb/LogoTienda.png" width="90%"></a>
-                <ul class="nav-principal-menu">
-                    <li class="nav-datos-menu-item"> <a href="#.html" class="nav-principal-link">Categorías</a></li>
-                    <li class="nav-datos-menu-item"> <a href="#.html" class="nav-principal-link">T-Shirt</a></li>
-                    <li class="nav-datos-menu-item"> <a href="#.html" class="nav-principal-link">Joggers</a></li>
-                    <li class="nav-datos-menu-item"> <a href="#.html" class="nav-principal-link">Promociones</a></li>
-                    <li class="nav-datos-menu-item"> <a href="#.html" class="nav-principal-link">Personalizá</a></li>
-                </ul>
-            </nav>   
 
+        <!-- info de contacto parte de arriba -->
+        <header class="d-flex flex-wrap" style="background-color: #153657">
+            <div class="container">
+                <ul class="nav nav-pills justify-content-end">
+                    <li class="nav-item "><a href="#" class="nav-link text-white"><i class="fab fa-whatsapp"></i> +506 8888-8888</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white"><i class="fab fa-instagram"></i> ventas@geekfactory.com</a></li>
+            </div>
         </header>
+
+        <!-- Navegador -->
+        <header class="p-3 text-bg-dark sticky-top" >
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="/"><img src="ImgWeb/LogoTienda.png" alt="" width="80%"/></a>
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li><a href="#" class="nav-link px-7 text-white btn btn-dark">Categorías</a></li>
+                        <li><a href="#" class="nav-link px-7 text-white btn btn-dark">T-Shirt</a></li>
+                        <li><a href="#" class="nav-link px-7 text-white btn btn-dark">Hoodies</a></li>
+                        <li><a href="#" class="nav-link px-7 text-white btn btn-dark">Joggers</a></li>
+                        <li><a href="#" class="nav-link px-7 text-white btn btn-dark">Promociones</a></li>
+                        <li><a href="#" class="nav-link px-7 text-white btn btn-dark">Personalizá</a></li>
+                    </ul>
+
+                    <!-- Buscador -->
+                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="buscar">
+                        <input type="buscar" class="form-control form-control-dark text-bg-dark" placeholder="Buscar" aria-label="buscar" >
+                    </form>
+
+
+                    <!-- botones -->
+                    <div class="text-end">
+                        <a class="btn btn-dark" href="/" role="button"
+                           ><i class="fab fa-instagram"></i
+                            ></a>
+
+                        <a class="btn btn-dark" href="/" role="button"
+                           ><i class="fab fa-instagram"></i
+                            ></a>
+
+                        <a class="btn btn-dark" href="/" role="button"
+                           ><i class="fab fa-instagram"></i
+                            ></a>
+
+                        <button type="button" class="btn btn-outline-light me-2"> <i class="fab fa-instagram"></i> Login</button>
+                        <button type="button" class="btn btn-warning">Sign-up</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
     </body>
 </html>
