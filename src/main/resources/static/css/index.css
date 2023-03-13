@@ -97,6 +97,14 @@
     color:#777777;
 }
 
+.top-ventas .carousel-control-next{
+      bottom: 15%;
+      right: -5%
+}
+.top-ventas .carousel-control-prev{
+      bottom: 15%;
+      left: -5%
+}
 .top-ventas .btn {
     color:white;
     background-color: #285c8c;
@@ -110,6 +118,7 @@
 .top-ventas .btn:hover {
     background-color:#006699;
 }
+
 /*---------------------PERSONALIZA---------------------*/
 .personaliza{
     display: flex;
@@ -196,7 +205,14 @@
     font-size: 30px;
     color:#777777;
 }
-
+.novedades .carousel-control-next{
+      bottom: 15%;
+      right: -5%
+}
+.novedades .carousel-control-prev{
+      bottom: 15%;
+      left: -5%
+}
 .novedades .btn {
     color:white;
     background-color: #285c8c;
