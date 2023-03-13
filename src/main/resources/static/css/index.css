@@ -53,7 +53,8 @@
 /*---------------------TIPOS DE PRENDA---------------------*/
 .tipos-de-prendas{
     /*position: relative;*/
-    width: 100%;
+    width: 60%;
+    margin-left: 20%;
     display: flex;
     padding-top: 2.5%;
     padding-bottom: 2.5%;
