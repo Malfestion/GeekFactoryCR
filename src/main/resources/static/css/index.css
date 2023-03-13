@@ -1,5 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+:root {
+    /* Colores: */
+    --azuloscuro: #153657;
+    --azulprincipal: #23588E;
+    --amarillologo: #F3DB43;
+    --gris-70-: #707070;
+    --blanco-20-: #F5F5F5;
+    --blanco: #FFFFFF;
+    
+    /*Textos*/
+    --font-family-roboto: Roboto;
+}
+
 *{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:Roboto;
   margin:0;
 }
 /*---------------------BANNER---------------------*/
@@ -7,7 +21,7 @@
   /*top: 20%;  /*cambie esto por problemas con el header*/
   /*position: relative;*/
   width: 100%;
-  padding-top: 6%;
+  padding-top: 0;
   padding-bottom: 2.5%;
   
 }
@@ -39,7 +53,8 @@
 /*---------------------TIPOS DE PRENDA---------------------*/
 .tipos-de-prendas{
     /*position: relative;*/
-    width: 100%;
+    width: 60%;
+    margin-left: 20%;
     display: flex;
     padding-top: 2.5%;
     padding-bottom: 2.5%;
@@ -72,17 +87,25 @@
 }
 /*---------------------TOP VENTAS---------------------*/
 .top-ventas{
-    width:50%;
+    width:70%;
     text-align: center;
     padding-top: 2.5%;
     padding-bottom: 2.5%;
-    margin-left: 25%;
+    margin-left: 15%;
 }
 .top-ventas .top-titulo{
     font-size: 30px;
     color:#777777;
 }
 
+.top-ventas .carousel-control-next{
+      bottom: 15%;
+      right: -5%
+}
+.top-ventas .carousel-control-prev{
+      bottom: 15%;
+      left: -5%
+}
 .top-ventas .btn {
     color:white;
     background-color: #285c8c;
@@ -96,6 +119,7 @@
 .top-ventas .btn:hover {
     background-color:#006699;
 }
+
 /*---------------------PERSONALIZA---------------------*/
 .personaliza{
     display: flex;
@@ -172,16 +196,24 @@
 
 /*---------------------NOVEDAES---------------------*/
 .novedades{
-    width:100%;
+    width:70%;
     text-align: center;
     padding-top: 5%;
     padding-bottom: 5%;
+    margin-left: 15%;
 }
 .novedades .novedades-titulo{
     font-size: 30px;
     color:#777777;
 }
-
+.novedades .carousel-control-next{
+      bottom: 15%;
+      right: -5%
+}
+.novedades .carousel-control-prev{
+      bottom: 15%;
+      left: -5%
+}
 .novedades .btn {
     color:white;
     background-color: #285c8c;
