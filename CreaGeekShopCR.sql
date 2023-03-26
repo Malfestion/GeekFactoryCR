@@ -55,12 +55,12 @@ INSERT INTO geekfactory.tematica (id_tematica,nombre) values
 (3,'Anime');
 
 INSERT INTO geekfactory.articulo (id_articulo,id_categoria,id_tematica,descripcion,precio,imagen) values
-(1,1,1,'',12000,''),
-(2,1,2,'',12000,''),
-(3,1,3,'',12000,''),
-(4,2,1,'',18500,''),
-(5,2,2,'',18500,''),
-(6,2,3,'',18500,''),
-(7,3,1,'',20500,''),
-(8,3,2,'',20500,''),
-(9,3,3,'',20500,'');
+(1,1,1,'camisa1',12000,''),
+(2,1,2,'camisa2',12000,''),
+(3,1,3,'camisa3',12000,''),
+(4,2,1,'sueter1',18500,''),
+(5,2,2,'sueter2',18500,''),
+(6,2,3,'sueter3',18500,''),
+(7,3,1,'jogger1',20500,''),
+(8,3,2,'jogger2',20500,''),
+(9,3,3,'jogger3',20500,'');

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS de header y footer de la pagina -->
+        <link rel="stylesheet" href="/css/header.css"/>
+        <link rel="stylesheet" href="/css/footer.css"/>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+        <link rel="stylesheet" th:href="@{/webjars/font-awesome/css/all.css}">
+        <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+        <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+        <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+    </head>
+    <body>
+        <header th:replace="~{layout/header :: header}"></header>
+        
+        <div class="container">
+            <div class="row row-cols-3">
+                <div class="card" th:each="articulo: ${articulos}">
+                    <div th:if="${articulo.categoria.nombre == 'sueter'}" class="card-body">
+                        <img th:src="${articulo.imagen}"width="300" height="300">
+                        <h6 class="card-subtitle mb-2 text-muted text-end">[[${articulo.precio}]]</h6>
+                        <a class="card-link" th:href="@{/carrito/comprar/} + ${articulo.idArticulo}">Comprar</a>
+                        <p class="card-text">[[${articulo.descripcion}]]</p>
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+        <footer th:replace="~{layout/footer :: footer}"></footer>
+        
+    </body>
+</html>
