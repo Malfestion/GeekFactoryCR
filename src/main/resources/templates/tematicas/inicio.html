@@ -20,21 +20,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     </head>
     <body>
         <header th:replace="~{layout/header :: header}"></header>
-        
-        <div class="container">
-            <div class="row row-cols-3">
-                <div class="card" th:each="articulo: ${articulos}">
-                    <div th:if="${articulo.categoria.nombre == 'camisa'}" class="card-body">
-                        <img th:src="${articulo.imagen}"width="300" height="300">
-                        <h6 class="card-subtitle mb-2 text-muted text-end">[[${articulo.precio}]]</h6>
-                        <a class="card-link" th:href="@{/carrito/comprar/} + ${articulo.idArticulo}">Comprar</a>
-                        <p class="card-text">[[${articulo.descripcion}]]</p>
-                    </div>
-                </div>
-                    
-            </div>
-        </div>
+        <div>AQUI VAN LOS BOTONES DE LAS TEMATICAS!!!</div>
         <footer th:replace="~{layout/footer :: footer}"></footer>
-        
     </body>
 </html>

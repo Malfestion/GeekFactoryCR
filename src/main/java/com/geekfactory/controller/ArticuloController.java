@@ -22,21 +22,21 @@ public class ArticuloController {
     private ArticuloService articuloService;
     
     @GetMapping("/camisas")
-    public String inicio(Model model){
+    public String camisas(Model model){
         var articulos=articuloService.getArticulos(false);
         model.addAttribute("articulos", articulos);
         //model.addAttribute("totalArticulos",articulos.size());
         return "/articulo/camisas";
     }
     @GetMapping("/sueters")
-    public String inicio2(Model model){
+    public String sueters(Model model){
         var articulos=articuloService.getArticulos(false);
         model.addAttribute("articulos", articulos);
         //model.addAttribute("totalArticulos",articulos.size());
         return "/articulo/sueters";
     }
     @GetMapping("/joggers")
-    public String inicio3(Model model){
+    public String joggers(Model model){
         var articulos=articuloService.getArticulos(false);
         model.addAttribute("articulos", articulos);
         //model.addAttribute("totalArticulos",articulos.size());

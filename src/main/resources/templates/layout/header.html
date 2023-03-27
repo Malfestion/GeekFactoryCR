@@ -23,12 +23,12 @@
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                     <a href="/"><img src="/ImgWeb/LogoTienda.png" alt="" width="80%"/></a>
                     <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                        <li><a href="#" class="nav-link px-7 text-white btn btn-dark">Categorías</a></li>
+                        <li><a th:href="@{/tematicas/inicio}"  class="nav-link px-7 text-white btn btn-dark">Categorías</a></li>
                         <li><a th:href="@{/articulo/camisas}" class="nav-link px-7 text-white btn btn-dark">T-Shirt</a></li>
                         <li><a th:href="@{/articulo/sueters}" class="nav-link px-7 text-white btn btn-dark">Hoodies</a></li>
                         <li><a th:href="@{/articulo/joggers}" class="nav-link px-7 text-white btn btn-dark">Joggers</a></li>
-                        <li><a href="#" class="nav-link px-7 text-white btn btn-dark">Promociones</a></li>
-                        <li><a href="#" class="nav-link px-7 text-white btn btn-dark">Personalizá</a></li>
+                        <li><a th:href="@{/promociones/inicio}" class="nav-link px-7 text-white btn btn-dark">Promociones</a></li>
+                        <li><a th:href="@{/personaliza/inicio}" class="nav-link px-7 text-white btn btn-dark">Personalizá</a></li>
                     </ul>
 
                     <!-- Buscador -->
@@ -45,7 +45,7 @@
 
 
                         <a class="btn btn-dark" href="/" role="button"
-                           ><i class="fa-regular fa-cart-shopping"></i></a>
+                           ><i class="fa fa-cart-shopping"></i></a>
 
                         <button type="button" class="btn btn-outline-light me-2"> <i class="far fa-user"></i> Login</button>
                         <button type="button" class="btn btn-warning">Sign-up</button>

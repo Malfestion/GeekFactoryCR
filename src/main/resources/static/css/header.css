@@ -15,7 +15,10 @@
     --font-family-roboto: Roboto;
 }
 
-
+*{
+  font-family:Roboto;
+  margin:0;
+}
 #header{
     position: fixed; /*posición fija*/
     top: 0;

@@ -55,12 +55,12 @@ INSERT INTO geekfactory.tematica (id_tematica,nombre) values
 (3,'Anime');
 
 INSERT INTO geekfactory.articulo (id_articulo,id_categoria,id_tematica,descripcion,precio,imagen) values
-(1,1,1,'camisa1',12000,'/ImgArticulos/camisaMarvel.jpg'),
-(2,1,2,'camisa2',12000,'/ImgArticulos//camisaDC.jpg'),
-(3,1,3,'camisa3',12000,'/ImgArticulos/camisaAnime.jpg'),
-(4,2,1,'sueter1',18500,'/ImgArticulos/sueterMarvel.jpg'),
-(5,2,2,'sueter2',18500,'/ImgArticulos/sueterDC.jpg'),
-(6,2,3,'sueter3',18500,'/ImgArticulos/sueterAnime.jpg'),
-(7,3,1,'jogger1',20500,'/ImgArticulos/joggerMarvel.jpg'),
-(8,3,2,'jogger2',20500,'/ImgArticulos/joggerDC.jpg'),
-(9,3,3,'jogger3',20500,'/ImgArticulos/joggerAnime.jpg');
+(1,1,1,'Camiseta de Marvel Avengers conmemorativa a Stan Lee.',12000,'/ImgArticulos/camisaMarvel.jpg'),
+(2,1,2,'Camiseta de DC, Superman, Wonder Woman, y Batman.',12000,'/ImgArticulos//camisaDC.jpg'),
+(3,1,3,'Camiseta de Rey Ayanami de Evangelion.',12000,'/ImgArticulos/camisaAnime.jpg'),
+(4,2,1,'Hoodie con el logo de Marvel.',18500,'/ImgArticulos/sueterMarvel.jpg'),
+(5,2,2,'Hoddie con el logo de Batman.',18500,'/ImgArticulos/sueterDC.jpg'),
+(6,2,3,'Hoodie de Ichikaru Ramen, de Naruto.',18500,'/ImgArticulos/sueterAnime.jpg'),
+(7,3,1,'Jogger de Spider Man.',20500,'/ImgArticulos/joggerMarvel.jpg'),
+(8,3,2,'Combo de jogger+hoodie de Batman.',20500,'/ImgArticulos/joggerDC.jpg'),
+(9,3,3,'Jogger de One Piece.',20500,'/ImgArticulos/joggerAnime.jpg');
