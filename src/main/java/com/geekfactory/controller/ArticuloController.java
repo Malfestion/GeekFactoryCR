@@ -42,6 +42,13 @@ public class ArticuloController {
         //model.addAttribute("totalArticulos",articulos.size());
         return "/articulo/joggers";
     }
+    @GetMapping("/nuevaColeccion")
+    public String nuevaColeccion(Model model){
+        var articulos=articuloService.getArticulos(false);
+        model.addAttribute("articulos", articulos);
+        //model.addAttribute("totalArticulos",articulos.size());
+        return "/articulo/nuevaColeccion";
+    }
     @GetMapping("/nuevo")
     public String articuloNuevo(Articulo articulo){
         return "/articulo/modifica";
