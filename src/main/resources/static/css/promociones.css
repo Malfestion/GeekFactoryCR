@@ -21,7 +21,6 @@
 .promos {
   /*position: relative;*/
   width: 100%;
-  padding-top: 2.5%;
   padding-bottom: 2.5%;
 }
 
@@ -35,7 +34,6 @@
 .novedades{
     width:70%;
     text-align: center;
-    padding-top: 5%;
     padding-bottom: 5%;
     margin-left: 15%;
 }
