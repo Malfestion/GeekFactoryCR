@@ -1,6 +1,6 @@
 /*Las líneas 2 y 3 están en comentarios, para usarse así la primera vez... luego de eso se quitan los comentarios para que todo funcione bien, en las siguientes ejecuciones */
-drop schema geekfactory;
-drop user administrador;
+/*drop schema geekfactory;
+drop user administrador;*/
 
 /*Se crea la base de datos */
 CREATE SCHEMA geekfactory ;

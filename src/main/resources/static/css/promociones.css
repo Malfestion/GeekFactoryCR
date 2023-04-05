@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+:root {
+    /* Colores: */
+    --azuloscuro: #153657;
+    --azulprincipal: #23588E;
+    --amarillologo: #F3DB43;
+    --gris-70-: #707070;
+    --blanco-20-: #F5F5F5;
+    --blanco: #FFFFFF;
+    
+    /*Textos*/
+    --font-family-roboto: Roboto;
+}
+
+*{
+  font-family:Roboto;
+  margin:0;
+}
+
+/*---------------------PROMOS---------------------*/
+.promos {
+  /*position: relative;*/
+  width: 100%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
+.promos img {
+  width: 100%;
+  height: auto;
+
+}
+
+/*---------------------NOVEDAES---------------------*/
+.novedades{
+    width:70%;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 15%;
+}
+.novedades .novedades-titulo{
+    font-size: 30px;
+    color:#777777;
+}
+.novedades .carousel-control-next{
+      bottom: 15%;
+      right: -5%
+}
+.novedades .carousel-control-prev{
+      bottom: 15%;
+      left: -5%
+}
+.novedades .btn {
+    color:white;
+    background-color: #285c8c;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+.novedades .btn:hover {
+    background-color:#006699;
+}

@@ -34,8 +34,8 @@
 .search{
   width: 100%;
   text-align: center;
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
 }
 .search input[type=text] {
   font-size: 20px;
@@ -173,8 +173,8 @@
 .servicios{
     color:#777777;
     text-align: center;
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
 }
 .servicios .servicios-img{
     width: 100%;
