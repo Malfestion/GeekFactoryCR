@@ -20,7 +20,77 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     </head>
     <body>
         <header th:replace="~{layout/header :: header}"></header>
-        <div>AQUI VA PERSONALIZA!!!</div>
+
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Columna de imagen -->
+                <div class="col-md-4 d-flex justify-content-center">
+                    <img src="/ImgWeb/Personaliza2.png" class="img-fluid">
+                </div>
+                <!-- Columna de formulario -->
+                <div class="col-md-8">
+                    <form>
+                        <div class="personaliza-txtbtn-box">
+                            <h2 class="personaliza-title">Personalizá tu camisa</h2>
+                            <p class="personaliza-pgraph">¡Gracias por elegir nuestra tienda para 
+                                hacer su camiseta personalizada! Estamos emocionados de ayudarlo 
+                                a crear una camiseta única y especial.</p>
+                            <p>Para comenzar, necesitamos algunos detalles de su parte. 
+                                Por favor, proporcione su nombre, número de teléfono y correo 
+                                electrónico para que podamos ponernos en contacto con usted y 
+                                confirmar los detalles de su pedido.</p>
+                            <p>Además, si desea agregar una imagen personalizada en alta calidad 
+                                a su camiseta, ¡nos encantaría verla! Para hacerlo, simplemente 
+                                adjunte la imagen en el campo de carga a continuación. 
+                                Asegúrese de que la imagen esté en formato JPEG o PNG y tenga 
+                                una resolución de al menos 300 ppp para garantizar la mejor calidad posible.</p>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="text" class="form-control" id="telefono" name="telefono">
+                        </div>
+                        <div class="form-group">
+                            <label for="correo">Correo electrónico</label>
+                            <input type="email" class="form-control" id="correo" name="correo">
+                        </div>
+
+                        <!-- Espacio para agregar texto -->
+                        <div class="mt-3">
+                            <label for="texto">Agregar información</label>
+                            <textarea class="form-control" id="texto" name="texto"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="imagen">Adjuntar imagen</label>
+                            <input type="file" class="form-control-file" id="imagen" name="imagen">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- texto de abajo -->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col">
+                    <div class="p-3">
+                        <!-- Párrafo con márgenes a los lados -->
+                        <p class="mx-3">Una vez que hayamos recibido sus detalles y su imagen personalizada, 
+                            nos pondremos manos a la obra para crear su camiseta única y especial. 
+                            Le enviaremos una prueba de diseño para que pueda ver cómo se verá 
+                            su camiseta antes de que la imprimamos, y si todo está bien, 
+                            procederemos a imprimir y enviar su pedido.</p>
+                        <p class="mx-3 ">Si tiene alguna pregunta o necesita ayuda en 
+                            cualquier momento, no dude en ponerse en contacto con nosotros.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <footer th:replace="~{layout/footer :: footer}"></footer>
     </body>
 </html>
