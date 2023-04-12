@@ -20,22 +20,23 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     </head>
     <body>
         <header th:replace="~{layout/header :: header}"></header>
-        
+
         <div class="container">
             <div class="row row-cols-3">
-                <div class="card" th:each="articulo: ${articulos}">
+                <div class="card bg-dark text-white" style="width:30%; margin:1%" th:each="articulo: ${articulos}">
                     <div class="card-body">
-                        <img th:src="${articulo.imagen}"width="300" height="300">
-                        <h6 class="card-subtitle mb-2 text-muted text-end">[[${articulo.precio}]]</h6>
+                        <img th:src="${articulo.imagen}" class="w-100"> 
+                        <h5 class="card-subtitle mt-2 text-muted">₡[[${articulo.precio}]]</h5>
+                        <p class="card-text">[[${articulo.descripcion}]]</p>
                         <form>
                                 <input type="hidden" name="texto" th:value="${articulo.idArticulo}"/>
-                                <button class="btn btn-ligth" id="addCar" 
+                                <button class="btn btn-outline-secondary btn-lg" id="addCar" 
                                         name="addCar" onclick="addCard(this.form)" 
                                         type="button">
-                                    <i class="fas fa-cart-plus"></i>
+                                    <i class="fas fa-cart-plus" style="color:white"></i>
                                 </button>
                             </form> 
-                        <p class="card-text">[[${articulo.descripcion}]]</p>
+                        
                     </div>
                 </div>
                     
