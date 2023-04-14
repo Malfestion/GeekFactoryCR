@@ -23,18 +23,27 @@
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                     <a href="/"><img src="/ImgWeb/LogoTienda.png" alt="" width="80%"/></a>
                     <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                        <li><a th:href="@{/tematicas/inicio}"  class="nav-link px-7 text-white btn btn-dark">Categorías</a></li>
-                        <li><a th:href="@{/articulo/camisas}" class="nav-link px-7 text-white btn btn-dark">T-Shirt</a></li>
-                        <li><a th:href="@{/articulo/sueters}" class="nav-link px-7 text-white btn btn-dark">Hoodies</a></li>
-                        <li><a th:href="@{/articulo/joggers}" class="nav-link px-7 text-white btn btn-dark">Joggers</a></li>
-                        <li><a th:href="@{/promociones/inicio}" class="nav-link px-7 text-white btn btn-dark">Promociones</a></li>
-                        <li><a th:href="@{/personaliza/inicio}" class="nav-link px-7 text-white btn btn-dark">Personalizá</a></li>
+                        <li class="nav-item"><a th:href="@{/tematicas/inicio}"  class="nav-link px-7 text-white btn btn-dark">Categorías</a></li>
+                        <li class="nav-item"><a th:href="@{/articulo/camisas}" class="nav-link px-7 text-white btn btn-dark">T-Shirt</a></li>
+                        <li class="nav-item"><a th:href="@{/articulo/sueters}" class="nav-link px-7 text-white btn btn-dark">Hoodies</a></li>
+                        <li class="nav-item"><a th:href="@{/articulo/joggers}" class="nav-link px-7 text-white btn btn-dark">Joggers</a></li>
+                        <li class="nav-item"><a th:href="@{/promociones/inicio}" class="nav-link px-7 text-white btn btn-dark">Promociones</a></li>
+                        <li class="nav-item"><a th:href="@{/personaliza/inicio}" class="nav-link px-7 text-white btn btn-dark">Personalizá</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Administración
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Artículos</a></li>                         
+                                <li><a class="dropdown-item" href="#">Categorías</a></li>
+                                <li><a class="dropdown-item" href="#">Temáticas</a></li>
+                                <li><a class="dropdown-item text-warning" href="#">Usuarios</a></li>
+                            </ul>
+                        </li>
+
                     </ul>
 
-                    <!-- Buscador -->
-                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="buscar">
-                        <input type="buscar" class="form-control form-control-dark text-bg-dark" placeholder="Buscar" aria-label="buscar" >
-                    </form>
+                    
 
 
                     <!-- botones -->
@@ -44,7 +53,7 @@
                             ><p></p></a>
                         <a class="btn btn-dark" th:href="@{/carrito/listado}" role="button"
                            ><i class="fa fa-cart-shopping"></i><p id='resultsBlock'></p></a>
-                           
+
                         <button type="button" class="btn btn-outline-light me-2"> <i class="far fa-user"></i> Login</button>
                         <button type="button" class="btn btn-warning">Sign-up</button>
                     </div>
@@ -52,12 +61,12 @@
             </div>
         </header>
 
-<script>
-            function addCard(formulario){             
-            var valor=formulario.elements[0].value;                
-            var url = '/carrito/agregar';
-            url = url + '/' +valor;
-            $("#resultsBlock").load(url);         
+        <script>
+            function addCard(formulario) {
+                var valor = formulario.elements[0].value;
+                var url = '/carrito/agregar';
+                url = url + '/' + valor;
+                $("#resultsBlock").load(url);
             }
         </script>
     </body>
