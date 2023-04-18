@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>GeekFactoryCR</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS de header y footer de la pagina -->
+        <link rel="stylesheet" href="/css/header.css"/>
+        <link rel="stylesheet" href="/css/footer.css"/>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+        <link rel="stylesheet" th:href="@{/webjars/font-awesome/css/all.css}">
+        <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+        <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+        <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+    </head>
+    <body>
+        <header th:replace="~{layout/header :: header}"></header>
+        <section id="botonesAgregar" class="py-4 mb-4 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">   
+                        <button 
+                            type="button" 
+                            class="btn btn-primary btn-block" 
+                            data-bs-toggle="modal" 
+                            data-bs-target="#agregarTematica">
+                            <i class="fas fa-plus"></i> Agregar Tematica
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div id="agregarTematica" 
+                 class="modal fade" 
+                 tabindex="-1" 
+                 aria-labelledby="exampleModalLabel" 
+                 aria-hidden="true">
+                <div class="modal-dialog modal-md">
+                    <div class="modal-content">
+                        <div class="modal-header bg-info text-white">
+                            <h5 class="modal-title">Agregar Tematica</h5>
+                            <button type="button" 
+                                    class="btn-close" 
+                                    data-bs-dismiss="modal" 
+                                    aria-label="Close"></button>
+                        </div> 
+                        <form th:action="@{/administracion/guardarTematica}" th:object="${tematica}"
+                              method="POST" class="was-validated">
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <label for="nombre">Nombre</label>
+                                    <input type="text" class="form-control" name="nombre" required="true">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary" type="submit">Guardar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <section  id="tematicas">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Listado de Tematicas</h4></div>
+                            <div th:if="${tematicas != null and !tematicas.empty}">
+                                <table class="table table-striped table-hover">
+                                    <thead class="table-dark">
+                                        <tr><th>#</th>
+                                            <th>Nombre</tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr th:each="tematica, contador : ${tematicas}">
+                                            <td>[[${contador.count}]]</td>
+                                            <td>[[${tematica.nombre}]]</td>
+                                            <td><a th:href="@{/administracion/eliminarTematica/}+${tematica.idTematica}"
+                                                   class="btn btn-danger">
+                                                    <i class="fas fa-trash"></i> Eliminar</a>
+                                                <a th:href="@{/administracion/modificaTematica/}+${tematica.idTematica}"
+                                                   class="btn btn-success">
+                                                    <i class="fas fa-pencil"></i> Modificar</a></td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="text-center p-2" th:if="${tematicas == null or tematicas.empty}">
+                                <span>Lista vacía</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <footer th:replace="~{layout/footer :: footer}"></footer>
+        
+    </body>
+</html>

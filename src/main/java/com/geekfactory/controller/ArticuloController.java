@@ -42,6 +42,27 @@ public class ArticuloController {
         //model.addAttribute("totalArticulos",articulos.size());
         return "/articulo/joggers";
     }
+    @GetMapping("/marvel")
+    public String marvel(Model model){
+        var articulos=articuloService.getArticulos(false);
+        model.addAttribute("articulos", articulos);
+        //model.addAttribute("totalArticulos",articulos.size());
+        return "/articulo/marvel";
+    }
+        @GetMapping("/dc")
+    public String dc(Model model){
+        var articulos=articuloService.getArticulos(false);
+        model.addAttribute("articulos", articulos);
+        //model.addAttribute("totalArticulos",articulos.size());
+        return "/articulo/dc";
+    }
+        @GetMapping("/anime")
+    public String anime(Model model){
+        var articulos=articuloService.getArticulos(false);
+        model.addAttribute("articulos", articulos);
+        //model.addAttribute("totalArticulos",articulos.size());
+        return "/articulo/anime";
+    }
     @GetMapping("/nuevaColeccion")
     public String nuevaColeccion(Model model){
         var articulos=articuloService.getArticulos(false);

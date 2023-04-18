@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>GeekFactoryCR</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS de header y footer de la pagina -->
+        <link rel="stylesheet" href="/css/header.css"/>
+        <link rel="stylesheet" href="/css/footer.css"/>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+        <link rel="stylesheet" th:href="@{/webjars/font-awesome/css/all.css}">
+        <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+        <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+        <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+    </head>
+    <body>
+        <header th:replace="~{layout/header :: header}"></header>
+        <div class="container">
+            <div class="row row-cols-3">
+                 <div th:if="${articulo.tematica.nombre == 'Marvel'}" class="card bg-dark text-white" style="width:30%; margin:1%" th:each="articulo: ${articulos}">
+                    <div class="card-body">
+                        <img th:src="${articulo.imagen}" class="w-100"> 
+                        <h5 class="card-subtitle mt-2 text-muted">₡[[${articulo.precio}]]</h5>
+                        <p class="card-text">[[${articulo.descripcion}]]</p>
+                        <form>
+                                <input type="hidden" name="texto" th:value="${articulo.idArticulo}"/>
+                                <button class="btn btn-outline-secondary btn-lg" id="addCar" 
+                                        name="addCar" onclick="addCard(this.form)" 
+                                        type="button">
+                                    <i class="fas fa-cart-plus" style="color:white"></i>
+                                </button>
+                            </form> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer th:replace="~{layout/footer :: footer}"></footer>
+         <script>
+            function addCard(formulario){             
+            var valor=formulario.elements[0].value;                
+            var url = '/carrito/agregar';
+            url = url + '/' +valor;
+            $("#resultsBlock").load(url);         
+            }
+        </script>
+    </body>
+</html>

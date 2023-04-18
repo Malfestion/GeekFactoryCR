@@ -23,7 +23,7 @@
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                     <a href="/"><img src="/ImgWeb/LogoTienda.png" alt="" width="80%"/></a>
                     <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                        <li class="nav-item"><a th:href="@{/tematicas/inicio}"  class="nav-link px-7 text-white btn btn-dark">Categorías</a></li>
+                        <li class="nav-item"><a th:href="@{/tematicas/inicio}"  class="nav-link px-7 text-white btn btn-dark">Temáticas</a></li>
                         <li class="nav-item"><a th:href="@{/articulo/camisas}" class="nav-link px-7 text-white btn btn-dark">T-Shirt</a></li>
                         <li class="nav-item"><a th:href="@{/articulo/sueters}" class="nav-link px-7 text-white btn btn-dark">Hoodies</a></li>
                         <li class="nav-item"><a th:href="@{/articulo/joggers}" class="nav-link px-7 text-white btn btn-dark">Joggers</a></li>
@@ -34,9 +34,9 @@
                                 Administración
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Artículos</a></li>                         
-                                <li><a class="dropdown-item" href="#">Categorías</a></li>
-                                <li><a class="dropdown-item" href="#">Temáticas</a></li>
+                                <li><a class="dropdown-item" th:href="@{/administracion/listadoArticulo}">Artículos</a></li>                         
+                                <li><a class="dropdown-item" th:href="@{/administracion/listadoCategoria}">Categorías</a></li>
+                                <li><a class="dropdown-item" th:href="@{/administracion/listadoTematica}">Temáticas</a></li>
                                 <li><a class="dropdown-item text-warning" href="#">Usuarios</a></li>
                             </ul>
                         </li>

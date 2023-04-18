@@ -20,23 +20,27 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     </head>
     <body>
         <header th:replace="~{layout/header :: header}"></header>
-          <div class="row">
-    <div class="col">
-      <img src="https://via.placeholder.com/600x650" class="img-fluid mx-auto" alt="600x650">
-    </div>
-    <div class="col">
-      <img src="https://via.placeholder.com/600x315" class="img-fluid mx-auto" alt="600x315">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <img src="https://via.placeholder.com/286x115" class="img-fluid mx-auto" alt="286x115">
-    </div>
-    <div class="col">
-      <img src="https://via.placeholder.com/286x115" class="img-fluid mx-auto" alt="286x115">
-    </div>
-  </div>
-</div>
-        <footer th:replace="~{layout/footer :: footer}"></footer>
+
+        <div class="row">
+
+            <div class="col-lg-4 col-md-4 col-xs-4 thumb">
+                <a class="thumbnail" th:href="@{/articulo/marvel}">
+                    <img class="img-responsive" src="/ImgWeb/marvel.png" alt="">
+                </a>
+            </div>
+            
+            <div class="col-lg-4 col-md-4 col-xs-4 thumb">
+                <a class="thumbnail" th:href="@{/articulo/dc}">
+                    <img class="img-responsive" src="/ImgWeb/dc.png" alt="">
+                </a>
+            </div>
+            
+            <div class="col-lg-4 col-md-4 col-xs-4 thumb">
+                <a class="thumbnail" th:href="@{/articulo/anime}">
+                    <img class="img-responsive" src="/ImgWeb/anime.png" alt="">
+                </a>
+            </div>
+
+            <footer th:replace="~{layout/footer :: footer}"></footer>
     </body>
 </html>

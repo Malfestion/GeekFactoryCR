@@ -25,7 +25,7 @@ public class Tematica implements Serializable{
     public Tematica() {
     }
 
-    public Tematica(String nombre, boolean activo) {
+    public Tematica(String nombre) {
         this.nombre = nombre;
     }
 
