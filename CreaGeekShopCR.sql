@@ -1,6 +1,6 @@
 /*Las líneas 2 y 3 están en comentarios, para usarse así la primera vez... luego de eso se quitan los comentarios para que todo funcione bien, en las siguientes ejecuciones */
-/*drop schema geekfactory;
-drop user administrador;*/
+drop schema geekfactory;
+drop user administrador;
 
 /*Se crea la base de datos */
 CREATE SCHEMA geekfactory ;
@@ -38,6 +38,65 @@ CREATE TABLE geekfactory.articulo (
   PRIMARY KEY (`id_articulo`),
   foreign key fk_articulo_categoria (id_categoria) references categoria(id_categoria),
   foreign key fk_articulo_tematica (id_tematica) references tematica(id_tematica)  
+)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_eo_0900_ai_ci;
+
+create table geekfactory.usuario (
+  id_usuario INT NOT NULL AUTO_INCREMENT,
+  username varchar(20),
+  password varchar(200),
+PRIMARY KEY (id_usuario)
+)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_eo_0900_ai_ci;
+
+create table geekfactory.rol (
+  id_rol INT NOT NULL AUTO_INCREMENT,
+  nombre varchar(20),
+  id_usuario int,
+  PRIMARY KEY (id_rol),
+  foreign key fk_rol_usuario (id_usuario) references usuario(id_usuario)
+)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_eo_0900_ai_ci;
+
+CREATE TABLE geekfactory.favorito (
+  id_favorito INT NOT NULL AUTO_INCREMENT,
+  id_usuario INT NOT NULL,
+  id_articulo INT NOT NULL,
+  PRIMARY KEY (`id_favorito`),
+  foreign key fk_favorito_usuario (id_usuario) references usuario(id_usuario),
+  foreign key fk_favorito_articulo (id_articulo) references articulo(id_articulo)  
+)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_eo_0900_ai_ci;
+
+
+CREATE TABLE geekfactory.factura (
+  id_factura INT NOT NULL AUTO_INCREMENT,
+  id_usuario INT NOT NULL,
+  fecha varchar(20),
+  PRIMARY KEY (`id_factura`),
+  foreign key fk_factura_usuario (id_usuario) references usuario(id_usuario)
+)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_eo_0900_ai_ci;
+
+CREATE TABLE geekfactory.venta (
+  id_venta INT NOT NULL AUTO_INCREMENT,
+  id_factura INT NOT NULL,
+  id_articulo INT NOT NULL,
+  cantidad INT,
+  talla varchar(20),
+  PRIMARY KEY (`id_venta`),
+  foreign key fk_venta_factura (id_factura) references factura(id_factura),
+  foreign key fk_venta_articulo (id_articulo) references articulo(id_articulo)  
 )
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4
